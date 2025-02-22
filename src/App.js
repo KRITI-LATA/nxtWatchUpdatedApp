@@ -4,6 +4,7 @@ import {Route, Switch, Redirect} from 'react-router-dom'
 import NotFound from './components/NotFound'
 import LoginForm from './components/LoginForm'
 import Home from './components/Home'
+import Trending from './components/Trending'
 import ProtectedRoute from './components/ProtectedRoute'
 import ThemeContext from './context/ThemeContext'
 import './App.css'
@@ -37,6 +38,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/login" component={LoginForm} />
           <ProtectedRoute exact path="/" component={Home} />
+          <ProtectedRoute exact path="/trending" component={Trending} />
           <Route path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>

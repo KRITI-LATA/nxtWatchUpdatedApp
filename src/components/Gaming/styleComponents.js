@@ -24,6 +24,7 @@ export const GamingTitleContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 20px;
+  margin-left: 20px;
 `
 
 export const GamingHeadingContainer = styled.div`
@@ -38,8 +39,8 @@ export const GamingHeading = styled.h1`
 export const GamingList = styled.ul`
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   list-style-type: none;
   width: 82vw;
 `

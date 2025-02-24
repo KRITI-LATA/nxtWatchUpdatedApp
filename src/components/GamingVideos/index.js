@@ -24,7 +24,9 @@ const GamingVideos = props => {
             <GamingItem>
               <GamingImage src={thumbnailUrl} alt="video thumbnail" />
               <GamingTitle color={textColor}>{title}</GamingTitle>
-              <GamingViews>{viewCount} Watching Worldwide</GamingViews>
+              <GamingViews color={textColor}>
+                {viewCount} Watching Worldwide
+              </GamingViews>
             </GamingItem>
           </GamingLink>
         )

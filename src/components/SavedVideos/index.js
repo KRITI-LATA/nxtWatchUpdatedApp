@@ -20,12 +20,6 @@ import {
   NoSavedVideosHeading,
   NoSavedVideosParagraph,
   SavedVideosList,
-  SavedVideoLink,
-  SavedVideoItem,
-  SavedVideoThumbNailImage,
-  SavedVideoDetail,
-  SavedVideoTitle,
-  SavedVideoChannelName,
 } from './styledComplonents'
 
 class SavedVideos extends Component {
@@ -60,11 +54,7 @@ class SavedVideos extends Component {
                         Saved Videos
                       </SavedVideosHeading>
                     </SavedVideosHeadingContainer>
-                    <SavedVideosList>
-                      <SavedVideoLink to={`/videos/${id}`}>
-                        <SavedVideoItem></SavedVideoItem>
-                      </SavedVideoLink>
-                    </SavedVideosList>
+                    <SavedVideosList> </SavedVideosList>
                   </SavedVideosContainer>
                   <NoSavedVideosContainer>
                     <NoSavedVideosImage

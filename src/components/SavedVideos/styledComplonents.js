@@ -35,6 +35,11 @@ export const SavedVideosIconContainer = styled.div`
 export const SavedVideosHeading = styled.h1`
   color: ${props => props.color};
   font-family: 'Roboto';
+
+  @media screen and (max-width: 576px) {
+    font-size: 22px;
+    font-weight: 500;
+  }
 `
 
 export const NoSavedVideosContainer = styled.div`

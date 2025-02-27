@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import ReactPlayer from 'react-player'
+import {formatDistanceToNow} from 'date-fns'
 import {AiOutlineLike, AiOutlineDislike} from 'react-icons/ai'
 import {BiListPlus} from 'react-icons/bi'
 
@@ -126,11 +127,15 @@ class VideoDetailRoute extends Component {
 
   renderPlayVideoView = () => {
     const {videoDetail, isLiked, isDislike} = this.state
+
+    const dateYear = videoDetail.publishedAt
+
     return (
       <ThemeContext.Consumer>
         {value => {
           const {isDarkTheme, savedVideos, addVideos} = value
           const textColor = isDarkTheme ? '#64748b' : '#231f20'
+          const channelColor = isDarkTheme ? '#f9f9f0' : '#231f20'
 
           let isSaved
           const index = savedVideos.findIndex(
@@ -150,15 +155,20 @@ class VideoDetailRoute extends Component {
 
           return (
             <VideoPlayer>
-              <ReactPlayer url={videoDetail.videoUrl} controls width="100%" />
+              <ReactPlayer
+                url={videoDetail.videoUrl}
+                controls
+                width="100%"
+                height="80%"
+              />
               <PlayVideoTitle color={textColor}>
                 {videoDetail.title}
               </PlayVideoTitle>
               <VideoStatusContainer>
                 <VideoStatus color={textColor}>
-                  {videoDetail.viewCount}
+                  {videoDetail.viewCount} views
                   <VideoDot>&#8226;</VideoDot>
-                  {videoDetail.publishedAt}
+                  {dateYear}
                 </VideoStatus>
                 <VideoStatusButtonContainer>
                   <LikeButton
@@ -194,13 +204,13 @@ class VideoDetailRoute extends Component {
                   alt="channel logo"
                 />
                 <ChannelInfo>
-                  <ChannelName color={textColor}>
+                  <ChannelName color={channelColor}>
                     {videoDetail.name}
                   </ChannelName>
                   <ChannelSubscriber color={textColor}>
                     {videoDetail.subscriberCount} Subscribers
                   </ChannelSubscriber>
-                  <ChannelDescription color={textColor}>
+                  <ChannelDescription color={channelColor}>
                     {videoDetail.description}
                   </ChannelDescription>
                 </ChannelInfo>

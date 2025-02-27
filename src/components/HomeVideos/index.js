@@ -1,3 +1,5 @@
+import {formatDistanceToNow} from 'date-fns'
+
 import ThemeContext from '../../context/ThemeContext'
 
 import {
@@ -25,6 +27,8 @@ const HomeVideos = props => {
     profileImageUrl,
   } = videosDetail
 
+  const newDate = formatDistanceToNow(new Date(publishedAt))
+
   return (
     <ThemeContext.Consumer>
       {value => {
@@ -43,7 +47,7 @@ const HomeVideos = props => {
               <ChannelName color={textColor}>{name}</ChannelName>
               <ContactSection>
                 <ViewsAndDate color={textColor}>
-                  {viewCount} views <Dot>&#8226;</Dot> {publishedAt}
+                  {viewCount} views <Dot>&#8226;</Dot> {newDate}
                 </ViewsAndDate>
               </ContactSection>
             </ListItem>

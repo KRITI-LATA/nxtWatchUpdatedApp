@@ -1,3 +1,5 @@
+import {formatDistanceToNow} from 'date-fns'
+
 import ThemeContext from '../../context/ThemeContext'
 
 import {
@@ -23,6 +25,8 @@ const TrendingVideos = props => {
     name,
   } = trendingVideoDetail
 
+  const newDate = formatDistanceToNow(new Date(publishedAt))
+
   return (
     <ThemeContext.Consumer>
       {value => {
@@ -43,7 +47,7 @@ const TrendingVideos = props => {
                 </TrendingChannelName>
                 <TrendingViewsAdDate color={textColor}>
                   {viewCount} views <TrendingDot>&#8226; </TrendingDot>
-                  {publishedAt}
+                  {newDate}
                 </TrendingViewsAdDate>
               </TrendingVideoDetail>
             </TrendingItem>

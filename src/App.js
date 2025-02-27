@@ -39,12 +39,6 @@ class App extends Component {
     }
   }
 
-  removeVideo = id => {
-    const {SavedVideos} = this.state
-    const updatedVideos = savedVideos.filter(eachVideo => eachVideo.id !== id)
-    this.setState({savedVideos: updatedVideos})
-  }
-
   render() {
     const {isDarkTheme, activeTab, savedVideos} = this.state
 

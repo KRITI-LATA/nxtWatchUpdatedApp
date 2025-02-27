@@ -192,10 +192,10 @@ class Home extends Component {
                     <BannerLeftPart>
                       <LogoImage
                         src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
-                        alt="website logo"
+                        alt="nxt watch logo"
                       />
                       <PremiumText>
-                        Buy Nxt Watch Premium prepaid plans with <br /> UPI
+                        Buy Nxt Watch Premium prepaid plans with UPI
                       </PremiumText>
                       <GetButton type="button">GET IT NOW</GetButton>
                     </BannerLeftPart>

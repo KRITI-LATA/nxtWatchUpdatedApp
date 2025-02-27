@@ -10,7 +10,6 @@ import {
   VideoTitle,
   VideoChannelName,
   VideoViewsAdDate,
-  VideoDot,
 } from './styleComponents'
 
 const VideoList = props => {
@@ -34,7 +33,7 @@ const VideoList = props => {
                 <VideoTitle color={textColor}>{title}</VideoTitle>
                 <VideoChannelName color={textColor}>{name}</VideoChannelName>
                 <VideoViewsAdDate color={textColor}>
-                  {viewCount} views <VideoDot>&#8226; </VideoDot>
+                  {viewCount} views &#8226;
                   {newDate}
                 </VideoViewsAdDate>
               </ListVideoDetail>

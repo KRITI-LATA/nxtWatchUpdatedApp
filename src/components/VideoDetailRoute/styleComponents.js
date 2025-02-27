@@ -67,9 +67,6 @@ export const LikeButton = styled.button`
   background-color: transparent;
   font-weight: 500;
   margin-right: 10px;
-`
-
-export const ButtonText = styled.span`
   font-family: 'Roboto';
 `
 
@@ -81,6 +78,7 @@ export const DisLikeButton = styled.button`
   background-color: transparent;
   font-weight: 500;
   margin-right: 10px;
+  font-family: 'Roboto';
 `
 
 export const SaveButton = styled.button`
@@ -91,6 +89,7 @@ export const SaveButton = styled.button`
   background-color: transparent;
   font-weight: 500;
   margin-right: 10px;
+  font-family: 'Roboto';
 `
 
 export const HorizantelLine = styled.hr`

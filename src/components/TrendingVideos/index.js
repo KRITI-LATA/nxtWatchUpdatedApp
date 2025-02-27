@@ -10,7 +10,6 @@ import {
   TrendingTitle,
   TrendingChannelName,
   TrendingViewsAdDate,
-  TrendingDot,
 } from './styleComponents'
 
 const TrendingVideos = props => {
@@ -46,7 +45,7 @@ const TrendingVideos = props => {
                   {name}
                 </TrendingChannelName>
                 <TrendingViewsAdDate color={textColor}>
-                  {viewCount} views <TrendingDot>&#8226; </TrendingDot>
+                  {viewCount} views &#8226;
                   {newDate}
                 </TrendingViewsAdDate>
               </TrendingVideoDetail>

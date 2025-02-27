@@ -89,7 +89,7 @@ class Trending extends Component {
       <>
         <TrendingList>
           {trendingData.map(eachData => (
-            <TrendingVideos key={eachData} trendingVideoDetail={eachData} />
+            <TrendingVideos key={eachData.id} trendingVideoDetail={eachData} />
           ))}
         </TrendingList>
       </>

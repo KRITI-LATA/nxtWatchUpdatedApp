@@ -37,7 +37,7 @@ export const ListVideoDetail = styled.div`
   justify-content: flex-start;
 `
 
-export const VideoTitle = styled.h1`
+export const VideoTitle = styled.p`
   color: ${props => props.color};
   font-size: 22px;
   font-family: 'Roboto';
@@ -60,5 +60,3 @@ export const VideoViewsAdDate = styled.p`
   margin-top: 5px;
   font-family: 'Roboto';
 `
-
-export const VideoDot = styled.span``

@@ -47,7 +47,7 @@ export const ContactInfoContainer = styled.div`
   margin-top: 20px;
 `
 
-export const ContactHeading = styled.h1`
+export const ContactHeading = styled.p`
   color: ${props => props.color};
   font-family: 'Roboto';
   font-size: 20px;

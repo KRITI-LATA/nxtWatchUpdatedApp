@@ -23,7 +23,6 @@ import {
   VideoDot,
   VideoStatusButtonContainer,
   LikeButton,
-  ButtonText,
   DisLikeButton,
   SaveButton,
   HorizantelLine,
@@ -68,10 +67,10 @@ class VideoDetailRoute extends Component {
   })
 
   getVideDetail = async () => {
+    this.setState({apiStatus: apiVideoDetailStatus.inProcess})
     const {match} = this.props
     const {params} = match
     const {id} = params
-    this.setState({apiStatus: apiVideoDetailStatus.inProcess})
 
     const jwtToken = Cookies.get('jwt_token')
 
@@ -177,7 +176,7 @@ class VideoDetailRoute extends Component {
                     onClick={this.onClickLikeBtn}
                   >
                     <AiOutlineLike size={25} />
-                    <ButtonText>Like</ButtonText>
+                    Like
                   </LikeButton>
                   <DisLikeButton
                     type="button"
@@ -185,7 +184,7 @@ class VideoDetailRoute extends Component {
                     onClick={this.onClickDislikeBtn}
                   >
                     <AiOutlineDislike size={25} />
-                    <ButtonText>Dislike</ButtonText>
+                    Dislike
                   </DisLikeButton>
                   <SaveButton
                     type="button"
@@ -193,7 +192,7 @@ class VideoDetailRoute extends Component {
                     onClick={onClickSaveBtn}
                   >
                     <BiListPlus size={25} />
-                    <ButtonText>{isSaved ? 'Saved' : 'Save'}</ButtonText>
+                    {isSaved ? 'Saved' : 'Save'}
                   </SaveButton>
                 </VideoStatusButtonContainer>
               </VideoStatusContainer>

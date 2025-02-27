@@ -12,7 +12,6 @@ import {
   Title,
   ChannelName,
   ViewsAndDate,
-  Dot,
 } from './styledComponents'
 
 const HomeVideos = props => {
@@ -47,7 +46,7 @@ const HomeVideos = props => {
               <ChannelName color={textColor}>{name}</ChannelName>
               <ContactSection>
                 <ViewsAndDate color={textColor}>
-                  {viewCount} views <Dot>&#8226;</Dot> {newDate}
+                  {viewCount} views &#8226; {newDate}
                 </ViewsAndDate>
               </ContactSection>
             </ListItem>

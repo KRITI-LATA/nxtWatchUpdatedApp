@@ -19,7 +19,7 @@ export const GamingImage = styled.img`
   width: 260px;
 `
 
-export const GamingTitle = styled.h1`
+export const GamingTitle = styled.p`
   color: ${props => props.color};
   font-size: 16px;
   font-family: 'Roboto';

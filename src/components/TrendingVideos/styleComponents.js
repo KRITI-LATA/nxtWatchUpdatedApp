@@ -40,7 +40,7 @@ export const TrendingVideoDetail = styled.div`
   padding: 0px;
 `
 
-export const TrendingTitle = styled.h1`
+export const TrendingTitle = styled.p`
   color: ${props => props.color};
   font-size: 18px;
   font-family: 'Roboto';
@@ -57,5 +57,3 @@ export const TrendingViewsAdDate = styled.p`
   margin-top: 5px;
   font-family: 'Roboto';
 `
-
-export const TrendingDot = styled.span``

@@ -33,7 +33,7 @@ export const ContactSection = styled.div`
   flex-direction: row;
 `
 
-export const Title = styled.h1`
+export const Title = styled.p`
   color: ${props => props.color};
   font-size: 14px;
   font-weight: 500;
@@ -51,4 +51,3 @@ export const ViewsAndDate = styled.p`
   margin-top: 5px;
   font-family: 'Roboto';
 `
-export const Dot = styled.span``
